@@ -1,0 +1,1481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+        integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://kit.fontawesome.com/3eb3fcbde1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Bai tap lon</title>
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            position: relative;
+            text-align: center;
+            font-size: 18px;
+            background: transparent;
+            width: 320px !important;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .mySwiper .swiper-slide span {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 30%;
+            background-color: rgba(21, 21, 33, 0.5490196078);
+            backdrop-filter: blur(10px);
+            border-bottom-left-radius: 35px;
+            border-bottom-right-radius: 35px;
+            transition: 0.5s;
+        }
+
+        .mySwiper .swiper-slide span h5 {
+            text-align: center;
+            font-size: 20px;
+            color: #eee;
+            font-family: 'DM Sans';
+            transform: translateY(20px);
+            font-weight: 700;
+        }
+
+        .swiper-slide:hover {
+            cursor: pointer;
+        }
+
+        .mySwiper .swiper-slide:hover span {
+            height: 40%;
+            background-color: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(0px);
+
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 35px;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            scale: 0.5;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+                <div class="container-fluid">
+                    <!-- <a class="navbar-brand" href="javascript:void(0)"> -->
+                    <a class="navbar-brand" href="javascript:void(0)">
+                        <!-- <img style="height:40px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Binance_logo.svg/1024px-Binance_logo.svg.png" alt=""> -->
+                        <!-- <div class="collab">
+                                <img style="width:40px; filter: invert(1);" src="https://static.thenounproject.com/png/1049913-200.png" alt="">
+                                <img style="width:40px;" src="https://upload.wikimedia.org/wikipedia/commons/2/24/NFT_Icon.png" alt="">
+                            </div> -->
+                        <img style="height: 40px;"
+                            src="https://nftevening.com/wp-content/uploads/2021/05/NFTevening_darkmode_logo.png" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button"
+                                    data-bs-toggle="dropdown" href="javascript:void(0)">Home</a>
+                                <!-- <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button"
+                                    data-bs-toggle="dropdown" href="javascript:void(0)">Home</a> -->
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="javascript:void(0)">Home1</a></li>
+                                    <li><a class="dropdown-item" href="#home2">Home2</a></li>
+                                    <li><a class="dropdown-item" href="javascript:void(0)">Home3</a></li>
+                                    <li><a class="dropdown-item" href="javascript:void(0)">Home4</a></li>
+                                    <li><a class="dropdown-item" href="javascript:void(0)">Home5</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button"
+                                    data-bs-toggle="dropdown" href="javascript:void(0)">Explore</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="javascript:void(0)">explore1</a></li>
+                                    <li><a class="dropdown-item" href="javascript:void(0)">explore2</a></li>
+                                    <li><a class="dropdown-item" href="javascript:void(0)">explore3</a></li>
+                                    <li><a class="dropdown-item" href="javascript:void(0)">explore4</a></li>
+                                    <li><a class="dropdown-item" href="javascript:void(0)">explore5</a></li>
+                                    <li><a class="dropdown-item" href="javascript:void(0)">Item Details1</a></li>
+                                    <li><a class="dropdown-item" href="javascript:void(0)">Item Details2</a></li>
+                                    <li><a class="dropdown-item" href="javascript:void(0)">Item Details3</a></li>
+                                    <li><a class="dropdown-item" href="javascript:void(0)">Item Details4</a></li>
+                                    <li><a class="dropdown-item" href="javascript:void(0)">Item Details5</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button"
+                                    data-bs-toggle="dropdown" href="javascript:void(0)">Pages</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="javascript:void(0)">Pages1</a></li>
+                                    <li><a class="dropdown-item" href="javascript:void(0)">Pages2</a></li>
+                                    <li><a class="dropdown-item" href="javascript:void(0)">Pages3</a></li>
+                                    <li><a class="dropdown-item" href="javascript:void(0)">Pages4</a></li>
+                                    <li><a class="dropdown-item" href="javascript:void(0)">Pages5</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)">Create</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-lg header-btn header-btn1">Connect Wallet</button>
+                    <button type="button" class="btn btn-primary btn-lg header-btn header-btn2"><i
+                            class="fa-solid fa-right-to-bracket"></i></button>
+                    <button type="button" class="btn btn-primary btn-lg header-btn header-btn3"><i
+                            class="fa-solid fa-wallet"></i></button>
+
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="home1">
+            <div class="container-fluid" data-aos="fade-up">
+                <div class="row">
+                    <div class="content col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <h2>Defind, Collect and Sell Super Rare <b>NFT</b></h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit repellat necessitatibus
+                            accusantium,
+                            numquam laboriosam quibusdam possimus accusamus. Perspiciatis, nostrum nulla. Nostrum iste
+                            officiis alias perspiciatis.</p>
+                        <p style="display: none;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, alias
+                            odio eligendi nulla beatae tempora.</p>
+                        <p style="display: none;">Lorem ipsum dolor sit amet.</p>
+                        <a href="javascript:void(0)" class="btn btn1">Learn More</a>
+                        <a href="javascript:void(0)" class="btn btn2">Create</a>
+                    </div>
+                    <div class="content2 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="containerBoxInside"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="home2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12" data-aos="fade-up">
+                        <div class="heading">
+                            <h4>All Categories</h4>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-12 col-md-12 col-sm-12">
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="0">
+                                     <img src="https://themesflat.com/html/binaseahtml/assets/images/product-category/product-category-1.jpg"
+                                        alt="">
+                                    <span>
+                                        <h5>Digital art</h5>
+                                    </span>
+                                </div>
+                                <div class="swiper-slide" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="50"> 
+                                    <img src="https://nftcalendar.io/storage/uploads/2022/02/16/unnamed__64__02162022182411620d414bc23ae.png"
+                                        alt="">
+                                    <span>
+                                        <h5>Style</h5>
+                                    </span>
+                                </div>
+                                <div class="swiper-slide" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="100" >
+                                    <img src="https://themesflat.com/html/binaseahtml/assets/images/product-category/product-category-3.jpg"
+                                        alt="">
+                                    <span>
+                                        <h5>Music</h5>
+                                    </span>
+                                </div>
+                                <div class="swiper-slide" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="150" >
+                                    <img src="https://i.pinimg.com/736x/b3/b7/1c/b3b71caedde9b80297faf6a77d04be3f.jpg"
+                                        alt="">
+                                    <span>
+                                        <h5>Sport</h5>
+                                    </span>
+                                </div>
+                                <div class="swiper-slide" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="200" >
+                                    <img src="https://themesflat.com/html/binaseahtml/assets/images/product-category/product-category-5.jpg"
+                                        alt="">
+                                    <span>
+                                        <h5>Digital art</h5>
+                                    </span>
+                                </div>
+                                <div class="swiper-slide" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="250" >
+                                    <img src="https://themesflat.com/html/binaseahtml/assets/images/product-category/product-category-6.jpg"
+                                        alt="">
+                                    <span>
+                                        <h5>Digital art</h5>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Swiper -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="home3">
+            <div class="container">
+                <div class="home3_1 row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12  left" data-aos="zoom-in-right">
+                        <h2>Musician's OGs</h2>
+                        <p>Et ligula ullamcorper malesuada proin libero nunc consequat. Sagittis aliquam malesuada
+                            bibendum arcu. At in tellus integer feugiat scelerisque varius morbi enim nunc. Faucibus
+                            ornare suspendisse sed nisi lacus. Varius sit amet mattis vulputate enim nulla. Pulvinar
+                            mattis nunc sed blandit libero volutpat sed. In nulla.</p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 right" data-aos="zoom-in-left" data-aos-delay="250" >
+                        <div class="button_discord">
+                            <button class="btn discord_home3_2">Find Out On Our Discord</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="home3_2 row">
+                    <div class="col-lg-12" data-aos="zoom-in-left">
+                        <h4>Hot Picks</h4>
+                    </div>
+                    <div class="col-lg-12" data-aos="zoom-out-down">
+                        <div class="select">
+                            <div class="banner">
+                                <ul>
+                                    <li><a href="javascript:void(0)">3d model</a></li>
+                                    <li><a href="javascript:void(0)">Anime/manga</a></li>
+                                    <li><a href="javascript:void(0)">cyber punk</a></li>
+                                    <li><a href="javascript:void(0)">pixel art</a></li>
+                                    <li><a href="javascript:void(0)">music</a></li>
+                                    <li><a href="javascript:void(0)">2d arts</a></li>
+                                    <li><a href="javascript:void(0)">abstract</a></li>
+                                </ul>
+                            </div>
+                            <div class="choose">
+                                <select>
+                                    <option value="0">Recently Create</option>
+                                    <option value="1">a</option>
+                                    <option value="2">BMW</option>
+                                    <option value="3">Citroen</option>
+                                    <option value="4">Ford</option>
+                                    <option value="5">Honda</option>
+                                    <option value="6">Jaguar</option>
+                                    <option value="7">Land Rover</option>
+                                    <option value="8">Mercedes</option>
+                                    <option value="9">Mini</option>
+                                    <option value="10">Nissan</option>
+                                    <option value="11">Toyota</option>
+                                    <option value="12">Volvo</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="home3_3 row">
+                    <div class="col-sm-6 col-md-3 col-xs-12 box" data-aos="flip-up" data-aos-duration="500" data-aos-delay="50" >
+                        <div class="top">
+                            <a href="javascript:void(0)">Avatar test#1</a>
+                            <div class="wish-list">
+                                <a href="javascript:void(0)" class="heart-icon"><i class="fa-solid fa-heart"></i></a>
+                            </div>
+                        </div>
+                        <div class="thumbnail">
+                            <img src="https://i.pinimg.com/originals/aa/b8/28/aab828c22c930d2563eeaf6f9d8dd7b8.jpg"
+                                alt="">
+                            <div class="countdown"></div>
+                        </div>
+                        <div class="bottom">
+                            <div class="details">
+                                <div class="author">
+                                    <div class="avatar">
+                                        <img width="50px"
+                                            src="https://gamepress.gg/arknights/sites/arknights/files/2022-08/char_4055_bgsnow.png"
+                                            alt="">
+                                    </div>
+                                    <div class="name">
+                                        <span>Creator</span><br>
+                                        <span><b>DaiTheWibuLord</b></span>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <span>Current bid</span><br>
+                                    <span class="ethereum">5 ETH <i style="color: #686de0; font-size: 20px;"
+                                            class="fa-brands fa-ethereum"></i></span>
+                                </div>
+                            </div>
+                            <button class="btn btn-buy"><i class="fa-solid fa-cart-shopping"></i> Buy</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-xs-12 box" data-aos="flip-up" data-aos-duration="500" data-aos-delay="100" >
+                        <div class="top">
+                            <a href="javascript:void(0)">Avatar test#1</a>
+                            <div class="wish-list">
+                                <a href="javascript:void(0)" class="heart-icon"><i class="fa-solid fa-heart"></i></a>
+                            </div>
+                        </div>
+                        <div class="thumbnail">
+                            <img src="https://i.pinimg.com/originals/aa/b8/28/aab828c22c930d2563eeaf6f9d8dd7b8.jpg"
+                                alt="">
+                            <div class="countdown"></div>
+                        </div>
+                        <div class="bottom">
+                            <div class="details">
+                                <div class="author">
+                                    <div class="avatar">
+                                        <img width="50px"
+                                            src="https://gamepress.gg/arknights/sites/arknights/files/2022-08/char_4055_bgsnow.png"
+                                            alt="">
+                                    </div>
+                                    <div class="name">
+                                        <span>Creator</span><br>
+                                        <span><b>DaiTheWibuLord</b></span>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <span>Current bid</span><br>
+                                    <span class="ethereum">5 ETH <i style="color: #686de0; font-size: 20px;"
+                                            class="fa-brands fa-ethereum"></i></span>
+                                </div>
+                            </div>
+                            <button class="btn btn-buy"><i class="fa-solid fa-cart-shopping"></i> Buy</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-xs-12 box" data-aos="flip-up" data-aos-duration="500" data-aos-delay="150" >
+                        <div class="top">
+                            <a href="javascript:void(0)">Avatar test#1</a>
+                            <div class="wish-list">
+                                <a href="javascript:void(0)" class="heart-icon"><i class="fa-solid fa-heart"></i></a>
+                            </div>
+                        </div>
+                        <div class="thumbnail">
+                            <img src="https://i.pinimg.com/originals/aa/b8/28/aab828c22c930d2563eeaf6f9d8dd7b8.jpg"
+                                alt="">
+                            <div class="countdown"></div>
+                        </div>
+                        <div class="bottom">
+                            <div class="details">
+                                <div class="author">
+                                    <div class="avatar">
+                                        <img width="50px"
+                                            src="https://gamepress.gg/arknights/sites/arknights/files/2022-08/char_4055_bgsnow.png"
+                                            alt="">
+                                    </div>
+                                    <div class="name">
+                                        <span>Creator</span><br>
+                                        <span><b>DaiTheWibuLord</b></span>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <span>Current bid</span><br>
+                                    <span class="ethereum">5 ETH <i style="color: #686de0; font-size: 20px;"
+                                            class="fa-brands fa-ethereum"></i></span>
+                                </div>
+                            </div>
+                            <button class="btn btn-buy"><i class="fa-solid fa-cart-shopping"></i> Buy</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-xs-12 box" data-aos="flip-up" data-aos-duration="500" data-aos-delay="200" >
+                        <div class="top">
+                            <a href="javascript:void(0)">Avatar test#1</a>
+                            <div class="wish-list">
+                                <a href="javascript:void(0)" class="heart-icon"><i class="fa-solid fa-heart"></i></a>
+                            </div>
+                        </div>
+                        <div class="thumbnail">
+                            <img src="https://i.pinimg.com/originals/aa/b8/28/aab828c22c930d2563eeaf6f9d8dd7b8.jpg"
+                                alt="">
+                            <div class="countdown"></div>
+                        </div>
+                        <div class="bottom">
+                            <div class="details">
+                                <div class="author">
+                                    <div class="avatar">
+                                        <img width="50px"
+                                            src="https://gamepress.gg/arknights/sites/arknights/files/2022-08/char_4055_bgsnow.png"
+                                            alt="">
+                                    </div>
+                                    <div class="name">
+                                        <span>Creator</span><br>
+                                        <span><b>DaiTheWibuLord</b></span>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <span>Current bid</span><br>
+                                    <span class="ethereum">5 ETH <i style="color: #686de0; font-size: 20px;"
+                                            class="fa-brands fa-ethereum"></i></span>
+                                </div>
+                            </div>
+                            <button class="btn btn-buy"><i class="fa-solid fa-cart-shopping"></i> Buy</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-xs-12 box" data-aos="flip-up" data-aos-duration="500" data-aos-delay="50" >
+                        <div class="top">
+                            <a href="javascript:void(0)">Avatar test#1</a>
+                            <div class="wish-list">
+                                <a href="javascript:void(0)" class="heart-icon"><i class="fa-solid fa-heart"></i></a>
+                            </div>
+                        </div>
+                        <div class="thumbnail">
+                            <img src="https://i.pinimg.com/originals/aa/b8/28/aab828c22c930d2563eeaf6f9d8dd7b8.jpg"
+                                alt="">
+                            <div class="countdown"></div>
+                        </div>
+                        <div class="bottom">
+                            <div class="details">
+                                <div class="author">
+                                    <div class="avatar">
+                                        <img width="50px"
+                                            src="https://gamepress.gg/arknights/sites/arknights/files/2022-08/char_4055_bgsnow.png"
+                                            alt="">
+                                    </div>
+                                    <div class="name">
+                                        <span>Creator</span><br>
+                                        <span><b>DaiTheWibuLord</b></span>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <span>Current bid</span><br>
+                                    <span class="ethereum">5 ETH <i style="color: #686de0; font-size: 20px;"
+                                            class="fa-brands fa-ethereum"></i></span>
+                                </div>
+                            </div>
+                            <button class="btn btn-buy"><i class="fa-solid fa-cart-shopping"></i> Buy</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-xs-12 box" data-aos="flip-up" data-aos-duration="500" data-aos-delay="100" >
+                        <div class="top">
+                            <a href="javascript:void(0)">Avatar test#1</a>
+                            <div class="wish-list">
+                                <a href="javascript:void(0)" class="heart-icon"><i class="fa-solid fa-heart"></i></a>
+                            </div>
+                        </div>
+                        <div class="thumbnail">
+                            <img src="https://i.pinimg.com/originals/aa/b8/28/aab828c22c930d2563eeaf6f9d8dd7b8.jpg"
+                                alt="">
+                            <div class="countdown"></div>
+                        </div>
+                        <div class="bottom">
+                            <div class="details">
+                                <div class="author">
+                                    <div class="avatar">
+                                        <img width="50px"
+                                            src="https://gamepress.gg/arknights/sites/arknights/files/2022-08/char_4055_bgsnow.png"
+                                            alt="">
+                                    </div>
+                                    <div class="name">
+                                        <span>Creator</span><br>
+                                        <span><b>DaiTheWibuLord</b></span>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <span>Current bid</span><br>
+                                    <span class="ethereum">5 ETH <i style="color: #686de0; font-size: 20px;"
+                                            class="fa-brands fa-ethereum"></i></span>
+                                </div>
+                            </div>
+                            <button class="btn btn-buy"><i class="fa-solid fa-cart-shopping"></i> Buy</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-xs-12 box" data-aos="flip-up" data-aos-duration="500" data-aos-delay="150" >
+                        <div class="top">
+                            <a href="javascript:void(0)">Avatar test#1</a>
+                            <div class="wish-list">
+                                <a href="javascript:void(0)" class="heart-icon"><i class="fa-solid fa-heart"></i></a>
+                            </div>
+                        </div>
+                        <div class="thumbnail">
+                            <img src="https://i.pinimg.com/originals/aa/b8/28/aab828c22c930d2563eeaf6f9d8dd7b8.jpg"
+                                alt="">
+                            <div class="countdown"></div>
+                        </div>
+                        <div class="bottom">
+                            <div class="details">
+                                <div class="author">
+                                    <div class="avatar">
+                                        <img width="50px"
+                                            src="https://gamepress.gg/arknights/sites/arknights/files/2022-08/char_4055_bgsnow.png"
+                                            alt="">
+                                    </div>
+                                    <div class="name">
+                                        <span>Creator</span><br>
+                                        <span><b>DaiTheWibuLord</b></span>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <span>Current bid</span><br>
+                                    <span class="ethereum">5 ETH <i style="color: #686de0; font-size: 20px;"
+                                            class="fa-brands fa-ethereum"></i></span>
+                                </div>
+                            </div>
+                            <button class="btn btn-buy"><i class="fa-solid fa-cart-shopping"></i> Buy</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-xs-12 box" data-aos="flip-up" data-aos-duration="500" data-aos-delay="200" >
+                        <div class="top">
+                            <a href="javascript:void(0)">Avatar test#1</a>
+                            <div class="wish-list">
+                                <a href="javascript:void(0)" class="heart-icon"><i class="fa-solid fa-heart"></i></a>
+                            </div>
+                        </div>
+                        <div class="thumbnail">
+                            <img src="https://i.pinimg.com/originals/aa/b8/28/aab828c22c930d2563eeaf6f9d8dd7b8.jpg"
+                                alt="">
+                            <div class="countdown"></div>
+                        </div>
+                        <div class="bottom">
+                            <div class="details">
+                                <div class="author">
+                                    <div class="avatar">
+                                        <img width="50px"
+                                            src="https://gamepress.gg/arknights/sites/arknights/files/2022-08/char_4055_bgsnow.png"
+                                            alt="">
+                                    </div>
+                                    <div class="name">
+                                        <span>Creator</span><br>
+                                        <span><b>DaiTheWibuLord</b></span>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <span>Current bid</span><br>
+                                    <span class="ethereum">5 ETH <i style="color: #686de0; font-size: 20px;"
+                                            class="fa-brands fa-ethereum"></i></span>
+                                </div>
+                            </div>
+                            <button class="btn btn-buy"><i class="fa-solid fa-cart-shopping"></i> Buy</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-xs-12 box" data-aos="flip-up" data-aos-duration="500" data-aos-delay="50" >
+                        <div class="top">
+                            <a href="javascript:void(0)">Avatar test#1</a>
+                            <div class="wish-list">
+                                <a href="javascript:void(0)" class="heart-icon"><i class="fa-solid fa-heart"></i></a>
+                            </div>
+                        </div>
+                        <div class="thumbnail">
+                            <img src="https://i.pinimg.com/originals/aa/b8/28/aab828c22c930d2563eeaf6f9d8dd7b8.jpg"
+                                alt="">
+                            <div class="countdown"></div>
+                        </div>
+                        <div class="bottom">
+                            <div class="details">
+                                <div class="author">
+                                    <div class="avatar">
+                                        <img width="50px"
+                                            src="https://gamepress.gg/arknights/sites/arknights/files/2022-08/char_4055_bgsnow.png"
+                                            alt="">
+                                    </div>
+                                    <div class="name">
+                                        <span>Creator</span><br>
+                                        <span><b>DaiTheWibuLord</b></span>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <span>Current bid</span><br>
+                                    <span class="ethereum">5 ETH <i style="color: #686de0; font-size: 20px;"
+                                            class="fa-brands fa-ethereum"></i></span>
+                                </div>
+                            </div>
+                            <button class="btn btn-buy"><i class="fa-solid fa-cart-shopping"></i> Buy</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-xs-12 box" data-aos="flip-up" data-aos-duration="500" data-aos-delay="100" >
+                        <div class="top">
+                            <a href="javascript:void(0)">Avatar test#1</a>
+                            <div class="wish-list">
+                                <a href="javascript:void(0)" class="heart-icon"><i class="fa-solid fa-heart"></i></a>
+                            </div>
+                        </div>
+                        <div class="thumbnail">
+                            <img src="https://i.pinimg.com/originals/aa/b8/28/aab828c22c930d2563eeaf6f9d8dd7b8.jpg"
+                                alt="">
+                            <div class="countdown"></div>
+                        </div>
+                        <div class="bottom">
+                            <div class="details">
+                                <div class="author">
+                                    <div class="avatar">
+                                        <img width="50px"
+                                            src="https://gamepress.gg/arknights/sites/arknights/files/2022-08/char_4055_bgsnow.png"
+                                            alt="">
+                                    </div>
+                                    <div class="name">
+                                        <span>Creator</span><br>
+                                        <span><b>DaiTheWibuLord</b></span>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <span>Current bid</span><br>
+                                    <span class="ethereum">5 ETH <i style="color: #686de0; font-size: 20px;"
+                                            class="fa-brands fa-ethereum"></i></span>
+                                </div>
+                            </div>
+                            <button class="btn btn-buy"><i class="fa-solid fa-cart-shopping"></i> Buy</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-xs-12 box" data-aos="flip-up" data-aos-duration="500" data-aos-delay="150" >
+                        <div class="top">
+                            <a href="javascript:void(0)">Avatar test#1</a>
+                            <div class="wish-list">
+                                <a href="javascript:void(0)" class="heart-icon"><i class="fa-solid fa-heart"></i></a>
+                            </div>
+                        </div>
+                        <div class="thumbnail">
+                            <img src="https://i.pinimg.com/originals/aa/b8/28/aab828c22c930d2563eeaf6f9d8dd7b8.jpg"
+                                alt="">
+                            <div class="countdown"></div>
+                        </div>
+                        <div class="bottom">
+                            <div class="details">
+                                <div class="author">
+                                    <div class="avatar">
+                                        <img width="50px"
+                                            src="https://gamepress.gg/arknights/sites/arknights/files/2022-08/char_4055_bgsnow.png"
+                                            alt="">
+                                    </div>
+                                    <div class="name">
+                                        <span>Creator</span><br>
+                                        <span><b>DaiTheWibuLord</b></span>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <span>Current bid</span><br>
+                                    <span class="ethereum">5 ETH <i style="color: #686de0; font-size: 20px;"
+                                            class="fa-brands fa-ethereum"></i></span>
+                                </div>
+                            </div>
+                            <button class="btn btn-buy"><i class="fa-solid fa-cart-shopping"></i> Buy</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-xs-12 box" data-aos="flip-up" data-aos-duration="500" data-aos-delay="200" >
+                        <div class="top">
+                            <a href="javascript:void(0)">Avatar test#1</a>
+                            <div class="wish-list">
+                                <a href="javascript:void(0)" class="heart-icon"><i class="fa-solid fa-heart"></i></a>
+                            </div>
+                        </div>
+                        <div class="thumbnail">
+                            <img src="https://i.pinimg.com/originals/aa/b8/28/aab828c22c930d2563eeaf6f9d8dd7b8.jpg"
+                                alt="">
+                            <div class="countdown"></div>
+                        </div>
+                        <div class="bottom">
+                            <div class="details">
+                                <div class="author">
+                                    <div class="avatar">
+                                        <img width="50px"
+                                            src="https://gamepress.gg/arknights/sites/arknights/files/2022-08/char_4055_bgsnow.png"
+                                            alt="">
+                                    </div>
+                                    <div class="name">
+                                        <span>Creator</span><br>
+                                        <span><b>DaiTheWibuLord</b></span>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <span>Current bid</span><br>
+                                    <span class="ethereum">5 ETH <i style="color: #686de0; font-size: 20px;"
+                                            class="fa-brands fa-ethereum"></i></span>
+                                </div>
+                            </div>
+                            <button class="btn btn-buy"><i class="fa-solid fa-cart-shopping"></i> Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="home4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12" data-aos="fade-right">
+                        <h3>Popular Collection</h3>
+                    </div>
+                    <div class="col-lg-12">
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper2">
+                            <div class="swiper-wrapper" data-aos="zoom-in">
+                                <div class="swiper-slide" data-aos="zoom-in">
+                                    <div class="item">
+                                        <div class="box">
+                                            <div class="thumbnail">
+                                                <div class="left">
+                                                    <img class="img1"
+                                                        src="https://i.pinimg.com/originals/aa/b8/28/aab828c22c930d2563eeaf6f9d8dd7b8.jpg"
+                                                        alt="">
+                                                </div>
+                                                <div class="right">
+                                                    <div class="img2">
+                                                        <img src="https://static.zerochan.net/Schwarz.%28Arknights%29.full.2754346.jpg"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="img3">
+                                                        <img src="https://s3.zerochan.net/240/29/39/2824479.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="countdown"></div>
+                                            </div>
+                                            <div class="bottom">
+                                                <div class="details">
+                                                    <div class="author">
+                                                        <div class="avatar">
+                                                            <img src="https://gamepress.gg/arknights/sites/arknights/files/2022-08/char_4055_bgsnow.png"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="name">
+                                                            <span>Creator</span><br>
+                                                            <span><b>DaiTheWibuLord</b></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="price">
+                                                        <span class="amount">28 Items</span>
+                                                        <!-- <span class="ethereum">5 ETH <i style="color: #686de0; font-size: 20px;"
+                                                                class="fa-brands fa-ethereum"></i></span> -->
+                                                    </div>
+                                                </div>
+                                                <div class="line"></div>
+                                                <div class="details">
+                                                    <div class="price">
+                                                        <h6><i style="color: #686de0; font-size: 20px;"
+                                                                class="fa-brands fa-ethereum"></i> 33.2 wETH</h6>
+                                                        <span>$92,025</span>
+                                                    </div>
+                                                    <div class="wish-list">
+                                                        <a href="javascript:void(0)" class="heart-icon"><i
+                                                                class="fa-solid fa-heart"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide" data-aos="zoom-in">
+                                    <div class="item">
+                                        <div class="box">
+                                            <div class="thumbnail">
+                                                <div class="left">
+                                                    <img class="img1"
+                                                        src="https://i.pinimg.com/originals/aa/b8/28/aab828c22c930d2563eeaf6f9d8dd7b8.jpg"
+                                                        alt="">
+                                                </div>
+                                                <div class="right">
+                                                    <div class="img2">
+                                                        <img src="https://static.zerochan.net/Schwarz.%28Arknights%29.full.2754346.jpg"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="img3">
+                                                        <img src="https://s3.zerochan.net/240/29/39/2824479.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="countdown"></div>
+                                            </div>
+                                            <div class="bottom">
+                                                <div class="details">
+                                                    <div class="author">
+                                                        <div class="avatar">
+                                                            <img src="https://gamepress.gg/arknights/sites/arknights/files/2022-08/char_4055_bgsnow.png"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="name">
+                                                            <span>Creator</span><br>
+                                                            <span><b>DaiTheWibuLord</b></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="price">
+                                                        <span class="amount">28 Items</span>
+                                                        <!-- <span class="ethereum">5 ETH <i style="color: #686de0; font-size: 20px;"
+                                                                class="fa-brands fa-ethereum"></i></span> -->
+                                                    </div>
+                                                </div>
+                                                <div class="line"></div>
+                                                <div class="details">
+                                                    <div class="price">
+                                                        <h6><i style="color: #686de0; font-size: 20px;"
+                                                                class="fa-brands fa-ethereum"></i> 33.2 wETH</h6>
+                                                        <span>$92,025</span>
+                                                    </div>
+                                                    <div class="wish-list">
+                                                        <a href="javascript:void(0)" class="heart-icon"><i
+                                                                class="fa-solid fa-heart"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide" data-aos="zoom-in">
+                                    <div class="item">
+                                        <div class="box">
+                                            <div class="thumbnail">
+                                                <div class="left">
+                                                    <img class="img1"
+                                                        src="https://i.pinimg.com/originals/aa/b8/28/aab828c22c930d2563eeaf6f9d8dd7b8.jpg"
+                                                        alt="">
+                                                </div>
+                                                <div class="right">
+                                                    <div class="img2">
+                                                        <img src="https://static.zerochan.net/Schwarz.%28Arknights%29.full.2754346.jpg"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="img3">
+                                                        <img src="https://s3.zerochan.net/240/29/39/2824479.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="countdown"></div>
+                                            </div>
+                                            <div class="bottom">
+                                                <div class="details">
+                                                    <div class="author">
+                                                        <div class="avatar">
+                                                            <img src="https://gamepress.gg/arknights/sites/arknights/files/2022-08/char_4055_bgsnow.png"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="name">
+                                                            <span>Creator</span><br>
+                                                            <span><b>DaiTheWibuLord</b></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="price">
+                                                        <span class="amount">28 Items</span>
+                                                        <!-- <span class="ethereum">5 ETH <i style="color: #686de0; font-size: 20px;"
+                                                                class="fa-brands fa-ethereum"></i></span> -->
+                                                    </div>
+                                                </div>
+                                                <div class="line"></div>
+                                                <div class="details">
+                                                    <div class="price">
+                                                        <h6><i style="color: #686de0; font-size: 20px;"
+                                                                class="fa-brands fa-ethereum"></i> 33.2 wETH</h6>
+                                                        <span>$92,025</span>
+                                                    </div>
+                                                    <div class="wish-list">
+                                                        <a href="javascript:void(0)" class="heart-icon"><i
+                                                                class="fa-solid fa-heart"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide" data-aos="zoom-in">
+                                    <div class="item">
+                                        <div class="box">
+                                            <div class="thumbnail">
+                                                <div class="left">
+                                                    <img class="img1"
+                                                        src="https://i.pinimg.com/originals/aa/b8/28/aab828c22c930d2563eeaf6f9d8dd7b8.jpg"
+                                                        alt="">
+                                                </div>
+                                                <div class="right">
+                                                    <div class="img2">
+                                                        <img src="https://static.zerochan.net/Schwarz.%28Arknights%29.full.2754346.jpg"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="img3">
+                                                        <img src="https://s3.zerochan.net/240/29/39/2824479.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="countdown"></div>
+                                            </div>
+                                            <div class="bottom">
+                                                <div class="details">
+                                                    <div class="author">
+                                                        <div class="avatar">
+                                                            <img src="https://gamepress.gg/arknights/sites/arknights/files/2022-08/char_4055_bgsnow.png"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="name">
+                                                            <span>Creator</span><br>
+                                                            <span><b>DaiTheWibuLord</b></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="price">
+                                                        <span class="amount">28 Items</span>
+                                                        <!-- <span class="ethereum">5 ETH <i style="color: #686de0; font-size: 20px;"
+                                                                class="fa-brands fa-ethereum"></i></span> -->
+                                                    </div>
+                                                </div>
+                                                <div class="line"></div>
+                                                <div class="details">
+                                                    <div class="price">
+                                                        <h6><i style="color: #686de0; font-size: 20px;"
+                                                                class="fa-brands fa-ethereum"></i> 33.2 wETH</h6>
+                                                        <span>$92,025</span>
+                                                    </div>
+                                                    <div class="wish-list">
+                                                        <a href="javascript:void(0)" class="heart-icon"><i
+                                                                class="fa-solid fa-heart"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide" data-aos="zoom-in">
+                                    <div class="item">
+                                        <div class="box">
+                                            <div class="thumbnail">
+                                                <div class="left">
+                                                    <img class="img1"
+                                                        src="https://i.pinimg.com/originals/aa/b8/28/aab828c22c930d2563eeaf6f9d8dd7b8.jpg"
+                                                        alt="">
+                                                </div>
+                                                <div class="right">
+                                                    <div class="img2">
+                                                        <img src="https://static.zerochan.net/Schwarz.%28Arknights%29.full.2754346.jpg"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="img3">
+                                                        <img src="https://s3.zerochan.net/240/29/39/2824479.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="countdown"></div>
+                                            </div>
+                                            <div class="bottom">
+                                                <div class="details">
+                                                    <div class="author">
+                                                        <div class="avatar">
+                                                            <img src="https://gamepress.gg/arknights/sites/arknights/files/2022-08/char_4055_bgsnow.png"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="name">
+                                                            <span>Creator</span><br>
+                                                            <span><b>DaiTheWibuLord</b></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="price">
+                                                        <span class="amount">28 Items</span>
+                                                        <!-- <span class="ethereum">5 ETH <i style="color: #686de0; font-size: 20px;"
+                                                                class="fa-brands fa-ethereum"></i></span> -->
+                                                    </div>
+                                                </div>
+                                                <div class="line"></div>
+                                                <div class="details">
+                                                    <div class="price">
+                                                        <h6><i style="color: #686de0; font-size: 20px;"
+                                                                class="fa-brands fa-ethereum"></i> 33.2 wETH</h6>
+                                                        <span>$92,025</span>
+                                                    </div>
+                                                    <div class="wish-list">
+                                                        <a href="javascript:void(0)" class="heart-icon"><i
+                                                                class="fa-solid fa-heart"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide" data-aos="zoom-in">
+                                    <div class="item">
+                                        <div class="box">
+                                            <div class="thumbnail">
+                                                <div class="left">
+                                                    <img class="img1"
+                                                        src="https://i.pinimg.com/originals/aa/b8/28/aab828c22c930d2563eeaf6f9d8dd7b8.jpg"
+                                                        alt="">
+                                                </div>
+                                                <div class="right">
+                                                    <div class="img2">
+                                                        <img src="https://static.zerochan.net/Schwarz.%28Arknights%29.full.2754346.jpg"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="img3">
+                                                        <img src="https://s3.zerochan.net/240/29/39/2824479.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="countdown"></div>
+                                            </div>
+                                            <div class="bottom">
+                                                <div class="details">
+                                                    <div class="author">
+                                                        <div class="avatar">
+                                                            <img src="https://gamepress.gg/arknights/sites/arknights/files/2022-08/char_4055_bgsnow.png"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="name">
+                                                            <span>Creator</span><br>
+                                                            <span><b>DaiTheWibuLord</b></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="price">
+                                                        <span class="amount">28 Items</span>
+                                                        <!-- <span class="ethereum">5 ETH <i style="color: #686de0; font-size: 20px;"
+                                                                class="fa-brands fa-ethereum"></i></span> -->
+                                                    </div>
+                                                </div>
+                                                <div class="line"></div>
+                                                <div class="details">
+                                                    <div class="price">
+                                                        <h6><i style="color: #686de0; font-size: 20px;"
+                                                                class="fa-brands fa-ethereum"></i> 33.2 wETH</h6>
+                                                        <span>$92,025</span>
+                                                    </div>
+                                                    <div class="wish-list">
+                                                        <a href="javascript:void(0)" class="heart-icon"><i
+                                                                class="fa-solid fa-heart"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide" data-aos="zoom-in">
+                                    <div class="item">
+                                        <div class="box">
+                                            <div class="thumbnail">
+                                                <div class="left">
+                                                    <img class="img1"
+                                                        src="https://i.pinimg.com/originals/aa/b8/28/aab828c22c930d2563eeaf6f9d8dd7b8.jpg"
+                                                        alt="">
+                                                </div>
+                                                <div class="right">
+                                                    <div class="img2">
+                                                        <img src="https://static.zerochan.net/Schwarz.%28Arknights%29.full.2754346.jpg"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="img3">
+                                                        <img src="https://s3.zerochan.net/240/29/39/2824479.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="countdown"></div>
+                                            </div>
+                                            <div class="bottom">
+                                                <div class="details">
+                                                    <div class="author">
+                                                        <div class="avatar">
+                                                            <img src="https://gamepress.gg/arknights/sites/arknights/files/2022-08/char_4055_bgsnow.png"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="name">
+                                                            <span>Creator</span><br>
+                                                            <span><b>DaiTheWibuLord</b></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="price">
+                                                        <span class="amount">28 Items</span>
+                                                        <!-- <span class="ethereum">5 ETH <i style="color: #686de0; font-size: 20px;"
+                                                                class="fa-brands fa-ethereum"></i></span> -->
+                                                    </div>
+                                                </div>
+                                                <div class="line"></div>
+                                                <div class="details">
+                                                    <div class="price">
+                                                        <h6><i style="color: #686de0; font-size: 20px;"
+                                                                class="fa-brands fa-ethereum"></i> 33.2 wETH</h6>
+                                                        <span>$92,025</span>
+                                                    </div>
+                                                    <div class="wish-list">
+                                                        <a href="javascript:void(0)" class="heart-icon"><i
+                                                                class="fa-solid fa-heart"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide" data-aos="zoom-in">
+                                    <div class="item">
+                                        <div class="box">
+                                            <div class="thumbnail">
+                                                <div class="left">
+                                                    <img class="img1"
+                                                        src="https://i.pinimg.com/originals/aa/b8/28/aab828c22c930d2563eeaf6f9d8dd7b8.jpg"
+                                                        alt="">
+                                                </div>
+                                                <div class="right">
+                                                    <div class="img2">
+                                                        <img src="https://static.zerochan.net/Schwarz.%28Arknights%29.full.2754346.jpg"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="img3">
+                                                        <img src="https://s3.zerochan.net/240/29/39/2824479.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="countdown"></div>
+                                            </div>
+                                            <div class="bottom">
+                                                <div class="details">
+                                                    <div class="author">
+                                                        <div class="avatar">
+                                                            <img src="https://gamepress.gg/arknights/sites/arknights/files/2022-08/char_4055_bgsnow.png"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="name">
+                                                            <span>Creator</span><br>
+                                                            <span><b>DaiTheWibuLord</b></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="price">
+                                                        <span class="amount">28 Items</span>
+                                                        <!-- <span class="ethereum">5 ETH <i style="color: #686de0; font-size: 20px;"
+                                                                class="fa-brands fa-ethereum"></i></span> -->
+                                                    </div>
+                                                </div>
+                                                <div class="line"></div>
+                                                <div class="details">
+                                                    <div class="price">
+                                                        <h6><i style="color: #686de0; font-size: 20px;"
+                                                                class="fa-brands fa-ethereum"></i> 33.2 wETH</h6>
+                                                        <span>$92,025</span>
+                                                    </div>
+                                                    <div class="wish-list">
+                                                        <a href="javascript:void(0)" class="heart-icon"><i
+                                                                class="fa-solid fa-heart"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide" data-aos="zoom-in">
+                                    <div class="item">
+                                        <div class="box">
+                                            <div class="thumbnail">
+                                                <div class="left">
+                                                    <img class="img1"
+                                                        src="https://i.pinimg.com/originals/aa/b8/28/aab828c22c930d2563eeaf6f9d8dd7b8.jpg"
+                                                        alt="">
+                                                </div>
+                                                <div class="right">
+                                                    <div class="img2">
+                                                        <img src="https://static.zerochan.net/Schwarz.%28Arknights%29.full.2754346.jpg"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="img3">
+                                                        <img src="https://s3.zerochan.net/240/29/39/2824479.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="countdown"></div>
+                                            </div>
+                                            <div class="bottom">
+                                                <div class="details">
+                                                    <div class="author">
+                                                        <div class="avatar">
+                                                            <img src="https://gamepress.gg/arknights/sites/arknights/files/2022-08/char_4055_bgsnow.png"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="name">
+                                                            <span>Creator</span><br>
+                                                            <span><b>DaiTheWibuLord</b></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="price">
+                                                        <span class="amount">28 Items</span>
+                                                        <!-- <span class="ethereum">5 ETH <i style="color: #686de0; font-size: 20px;"
+                                                                class="fa-brands fa-ethereum"></i></span> -->
+                                                    </div>
+                                                </div>
+                                                <div class="line"></div>
+                                                <div class="details">
+                                                    <div class="price">
+                                                        <h6><i style="color: #686de0; font-size: 20px;"
+                                                                class="fa-brands fa-ethereum"></i> 33.2 wETH</h6>
+                                                        <span>$92,025</span>
+                                                    </div>
+                                                    <div class="wish-list">
+                                                        <a href="javascript:void(0)" class="heart-icon"><i
+                                                                class="fa-solid fa-heart"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="home5">
+            <div class="container">
+                <div class="container-content">
+                    <div class="left-part">
+                        <h3 data-aos="zoom-in-right">How to Mint</h3>
+                        <p data-aos="fade-up">As the first hero of the Meta Legends, collection has over 9,999 unique skins drawn from the
+                            different missions and challenges he faced throughout his life.</p>
+                        <p data-aos="fade-up">The artwork has been hand-drawned by Robert Green in the traditional anime style and
+                            composited by Layla Efiyo.</p>
+                        <p data-aos="fade-up">Curabitur pharetra velit eget dignissim varius. In vulputate elit at tortor pellentesque, non
+                            pulvinar neque consequat. Aenean tristique odio in libero tincidunt maximus. Nulla pharetra
+                            viverra dolor ut blandit. Cras finibus vel tortor eget lacinia. Pellentesque interdum elit
+                            non lacinia faucibus. Morbi nec felis auctor, tincidunt lacus sit amet, iaculis ipsum.</p>
+                    </div>
+                    <div class="right-part">
+                        <div class="box-help box1" data-aos="flip-left">
+                            <div class="content">
+                                <h3>01</h3>
+                                <p>CONNECT YOUR WALLET</p>
+                            </div>
+                        </div>
+                        <div class="box-help box2" data-aos="flip-right">
+                            <div class="content">
+                                <h3>02</h3>
+                                <p>SELECT YOUR QUANTITY</p>
+                            </div>
+                        </div>
+                        <div class="box-help box3" data-aos="flip-left">
+                            <div class="content">
+                                <h3>03</h3>
+                                <p>CONFIRM THE TRANSACTION</p>
+                            </div>
+                        </div>
+                        <div class="box-help box4" data-aos="flip-right">
+                            <div class="content">
+                                <h3>04</h3>
+                                <p>RECEIVE YOUR NFT’S</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-12 col-xs-12">
+                    <div class="logo">
+                        <img style="height: 40px;"
+                            src="https://nftevening.com/wp-content/uploads/2021/05/NFTevening_darkmode_logo.png" alt="">
+                    </div>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptatibus inventore
+                            optio! Dolore perspiciatis velit saepe sapiente rem nesciunt dolores!</p>
+                    </div>
+                    <div class="social-icons">
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                        </ul>
+                    </div>
+                    <p class="copy-right">Copyright © 2022 Daiwibu. All Rights Reserved.</p>
+                </div>
+                <div class="col-lg-5 col-sm-6 col-xs-12">
+                    <div class="row-flex">
+                        <div class="col-flex-1 col-flex">
+                            <h6>Marketplace</h6>
+                            <ul>
+                                <li><a href="#">Explore1</a></li>
+                                <li><a href="#">Item detail</a></li>
+                                <li><a href="#">Live Audition</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-flex-2 col-flex">
+                            <h6>Stats</h6>
+                            <ul>
+                                <li><a href="#">Ranking</a></li>
+                                <li><a href="#">Activity</a></li>
+                                <li><a href="#">Auther</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-flex-3 col-flex">
+                            <h6>Resource</h6>
+                            <ul>
+                                <li><a href="#">Blogs</a></li>
+                                <li><a href="#">Helps</a></li>
+                                <li><a href="#">Faqs</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-flex-4 col-flex">
+                            <h6>My account</h6>
+                            <ul>
+                                <li><a href="#">Profile</a></li>
+                                <li><a href="#">My wallet</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-12 col-xs-12">
+                    <div class="subscribe">
+                        <h6>Subscribe Us</h6>
+                        <p>Signup for our newsletter to get the latest news in your inbox.</p>
+                        <div class="email">
+                            <input type="email" placeholder="Email">
+                            <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <a id="scroll-top" class="show"><i class="fa-solid fa-chevron-up"></i></a>
+    <!-- Home1 script -->
+    <script>
+        let containerBoxInside = document.querySelector('.containerBoxInside')
+        for (let i = 1; i <= 100; i++) {
+            let dot = document.createElement('div')
+            dot.classList.add('element')
+            containerBoxInside.appendChild(dot)
+        }
+
+        let dotAll = document.querySelectorAll('.element')
+        let animation = anime.timeline({
+            targets: dotAll,
+            easing: 'easeInOutExpo',
+            loop: true,
+            delay: anime.stagger(100, { grid: [10, 10], from: 'center' })
+        })
+        animation.add({
+            rotateZ: 180,
+            translateY: anime.stagger(-10, { grid: [10, 10], from: 'center', axis: 'y' }),
+            translateX: anime.stagger(-10, { grid: [10, 10], from: 'center', axis: 'x' }),
+            opacity: 1,
+        })
+        animation.add({
+            borderRadius: 50
+        })
+        animation.add({
+            scale: 0.2,
+            opacity: 0.2
+        })
+        animation.add({
+            translateY: anime.stagger(0, { grid: [10, 10], from: 'center', axis: 'y' }),
+            translateX: anime.stagger(0, { grid: [10, 10], from: 'center', axis: 'x' }),
+            opacity: 1
+        })
+        animation.add({
+            scale: 1,
+            opacity: 1
+        })
+        animation.add({
+            borderRadius: 0,
+        })
+        animation.add({
+            rotateZ: -90
+        })
+    </script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        let index = 4;
+        let width = window.innerWidth
+            || document.documentElement.clientWidth
+            || document.body.clientWidth;
+        console.log(width);
+        if (width <= 768) { index = 1 }
+        else if (width <= 920) { index = 2 }
+        else if (width <= 1110) { index = 3 }
+        else index = 4
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: index,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: false,
+            },
+        });
+        // let body = document.querySelector("body")
+        window.addEventListener('resize', (event) => {
+            let width = window.innerWidth
+                || document.documentElement.clientWidth
+                || document.body.clientWidth;
+            console.log(width);
+            if (width <= 768) { index = 1 }
+            else if (width <= 920) { index = 2 }
+            else if (width <= 1110) { index = 3 }
+            else index = 4
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: index,
+                spaceBetween: 30,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: false,
+                },
+            });
+        })
+    </script>
+    <script>
+        let wishlist = document.querySelectorAll(".wish-list")
+        for (let i = 0; i < wishlist.length; i++) {
+            wishlist[i].addEventListener("click", function () {
+                this.classList.toggle('active');
+            })
+        }
+    </script>
+    <!-- Initialize Swiper2 -->
+    <script>
+        var swiper = new Swiper(".mySwiper2", {
+            slidesPerView: 3,
+            spaceBetween: 60,
+            slidesPerGroup: 1,
+            loop: false,
+            loopFillGroupWithBlank: false,
+            pagination: {
+                el: ".swiper-pagination2",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    <script>
+        let show = document.querySelector(".show")
+        show.addEventListener("click", function () {
+            window.scrollTo(0, 0);
+        })
+    </script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
